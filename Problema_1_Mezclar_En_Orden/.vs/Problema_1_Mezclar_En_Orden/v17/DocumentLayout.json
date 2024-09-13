@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Brainer\\OneDrive - Estudiantes ITCR\\TEC\\2024\\II Semestre\\Algoritmos II\\Problema_1_Mezclar_En_Orden\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA34D27A-DB65-4E91-8CF5-7A40DAC5DA8C}|Problema_1_Mezclar_En_Orden\\Problema_1_Mezclar_En_Orden.csproj|c:\\users\\brainer\\onedrive - estudiantes itcr\\tec\\2024\\ii semestre\\algoritmos ii\\problema_1_mezclar_en_orden\\problema_1_mezclar_en_orden\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA34D27A-DB65-4E91-8CF5-7A40DAC5DA8C}|Problema_1_Mezclar_En_Orden\\Problema_1_Mezclar_En_Orden.csproj|solutionrelative:problema_1_mezclar_en_orden\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA34D27A-DB65-4E91-8CF5-7A40DAC5DA8C}|Problema_1_Mezclar_En_Orden\\Problema_1_Mezclar_En_Orden.csproj|c:\\users\\brainer\\onedrive - estudiantes itcr\\tec\\2024\\ii semestre\\algoritmos ii\\problema_1_mezclar_en_orden\\problema_1_mezclar_en_orden\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AA34D27A-DB65-4E91-8CF5-7A40DAC5DA8C}|Problema_1_Mezclar_En_Orden\\Problema_1_Mezclar_En_Orden.csproj|solutionrelative:problema_1_mezclar_en_orden\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Brainer\\OneDrive - Estudiantes ITCR\\TEC\\2024\\II Semestre\\Algoritmos II\\Problema_1_Mezclar_En_Orden\\Problema_1_Mezclar_En_Orden\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Problema_1_Mezclar_En_Orden\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Brainer\\OneDrive - Estudiantes ITCR\\TEC\\2024\\II Semestre\\Algoritmos II\\Problema_1_Mezclar_En_Orden\\Problema_1_Mezclar_En_Orden\\Form1.Designer.cs",
+              "RelativeToolTip": "Problema_1_Mezclar_En_Orden\\Form1.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T06:37:20.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Brainer\\OneDrive - Estudiantes ITCR\\TEC\\2024\\II Semestre\\Algoritmos II\\Problema_1_Mezclar_En_Orden\\Problema_1_Mezclar_En_Orden\\Form1.cs",
+              "RelativeDocumentMoniker": "Problema_1_Mezclar_En_Orden\\Form1.cs",
+              "ToolTip": "C:\\Users\\Brainer\\OneDrive - Estudiantes ITCR\\TEC\\2024\\II Semestre\\Algoritmos II\\Problema_1_Mezclar_En_Orden\\Problema_1_Mezclar_En_Orden\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Problema_1_Mezclar_En_Orden\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T02:37:51.416Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

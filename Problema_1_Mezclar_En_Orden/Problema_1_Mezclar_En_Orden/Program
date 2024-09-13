@@ -1,0 +1,157 @@
+// Problema 1: Mezclar Orden 
+
+public enum SortDirection
+{
+    Ascending,
+    Descending
+}
+
+public class DoublyLinkedList
+{
+    // Nodo de la lista doblemente enlazada
+    private class Node
+    {
+        public int Value;
+        public Node Next;
+        public Node Prev;
+
+        public Node(int value)
+        {
+            Value = value;
+            Next = null;
+            Prev = null;
+        }
+    }
+
+    private Node head;
+    private Node tail;
+
+    public DoublyLinkedList()
+    {
+        head = null;
+        tail = null;
+    }
+
+    // Insertar al final de la lista
+    public void InsertLast(int value)
+    {
+        Node newNode = new Node(value);
+
+        if (head == null)
+        {
+            head = tail = newNode;
+        }
+        else
+        {
+            tail.Next = newNode;
+            newNode.Prev = tail;
+            tail = newNode;
+        }
+    }
+
+    // Método para mezclar dos listas en un orden determinado
+    public void MergeSorted(DoublyLinkedList listA, DoublyLinkedList listB, SortDirection direction)
+    {
+        if (listA == null || listB == null)
+            throw new InvalidOperationException("One of the lists is null.");
+
+        // Si ambas listas están vacías
+        if (listA.head == null && listB.head == null)
+            return;
+
+        // Si una de las listas está vacía
+        if (listA.head == null)
+        {
+            if (direction == SortDirection.Ascending)
+                head = listB.head;
+            else
+                Reverse(listB);
+            return;
+        }
+
+        if (listB.head == null)
+            return;
+
+        // Mezcla de ambas listas
+        DoublyLinkedList mergedList = new DoublyLinkedList();
+
+        Node a = listA.head;
+        Node b = listB.head;
+
+        // Ascendente
+        if (direction == SortDirection.Ascending)
+        {
+            while (a != null && b != null)
+            {
+                if (a.Value < b.Value)
+                {
+                    mergedList.InsertLast(a.Value);
+                    a = a.Next;
+                }
+                else
+                {
+                    mergedList.InsertLast(b.Value);
+                    b = b.Next;
+                }
+            }
+        }
+        // Descendente
+        else
+        {
+            while (a != null && b != null)
+            {
+                if (a.Value > b.Value)
+                {
+                    mergedList.InsertLast(a.Value);
+                    a = a.Next;
+                }
+                else
+                {
+                    mergedList.InsertLast(b.Value);
+                    b = b.Next;
+                }
+            }
+        }
+
+        // Agregar el resto de nodos de la lista A
+        while (a != null)
+        {
+            mergedList.InsertLast(a.Value);
+            a = a.Next;
+        }
+
+        // Agregar el resto de nodos de la lista B
+        while (b != null)
+        {
+            mergedList.InsertLast(b.Value);
+            b = b.Next;
+        }
+
+        // Actualizar la lista original con la lista mezclada
+        this.head = mergedList.head;
+        this.tail = mergedList.tail;
+    }
+
+    // Método auxiliar para invertir la lista (usado en el caso descendente)
+    private void Reverse(DoublyLinkedList list)
+    {
+        Node current = list.tail;
+        while (current != null)
+        {
+            InsertLast(current.Value);
+            current = current.Prev;
+        }
+    }
+
+    // Imprimir la lista (para probar)
+    public void PrintList()
+    {
+        Node current = head;
+        while (current != null)
+        {
+            Console.Write(current.Value + " -> ");
+            current = current.Next;
+        }
+        Console.WriteLine("null");
+    }
+}

@@ -1,0 +1,88 @@
+/// Problema_2: Invertir lista 
+
+
+using System;
+
+public class DoublyLinkedList
+{
+    // Nodo de la lista doblemente enlazada
+    private class Node
+    {
+        public int Value;
+        public Node Next;
+        public Node Prev;
+
+        public Node(int value)
+        {
+            Value = value;
+            Next = null;
+            Prev = null;
+        }
+    }
+
+    private Node head;
+    private Node tail;
+
+    public DoublyLinkedList()
+    {
+        head = null;
+        tail = null;
+    }
+
+    // Método para invertir la lista
+    public void Invert()
+    {
+        if (head == null)
+        {
+            throw new InvalidOperationException("The list is null or empty.");
+        }
+
+        Node current = head;
+        Node temp = null;
+
+        // Intercambiamos "next" y "prev" en cada nodo
+        while (current != null)
+        {
+            temp = current.Prev;
+            current.Prev = current.Next;
+            current.Next = temp;
+            current = current.Prev;
+        }
+
+        // Intercambiamos head y tail
+        if (temp != null)
+        {
+            head = temp.Prev;
+        }
+    }
+
+    // Insertar al final de la lista
+    public void InsertLast(int value)
+    {
+        Node newNode = new Node(value);
+
+        if (head == null)
+        {
+            head = tail = newNode;
+        }
+        else
+        {
+            tail.Next = newNode;
+            newNode.Prev = tail;
+            tail = newNode;
+        }
+    }
+
+    // Imprimir la lista (para probar)
+    public void PrintList()
+    {
+        Node current = head;
+        while (current != null)
+        {
+            Console.Write(current.Value + " -> ");
+            current = current.Next;
+        }
+        Console.WriteLine("null");
+    }
+}
+
